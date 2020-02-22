@@ -6,6 +6,7 @@ interface Calculator
     public float divide(int x, int y);
     public int modulus(int x, int y);
 }
+
 public class Calc implements Calculator
 {
     public int add(int r, int q)
@@ -29,15 +30,15 @@ public class Calc implements Calculator
     {
         return (r%q);
     }
-public static void main(String arg[])
-{
-   int w= 8;
-   int z = 5 ;
-    Calculator ob = new Calc();
-    System.out.println ("The Sum is " +ob.add(w, z)) ;  
-    System.out.println ("The Differece is " +ob.subtract(w,z)) ;  
-    System.out.println ("The product is " +ob.multiply(w,z)) ;  
-    System.out.println ("The division is " +ob.divide(w,z)) ;  
-    System.out.println ("The modulus is " +ob.modulus(w,z)) ;
-}
+    public static void main(String arg[])
+    {
+        int w= 8;
+        int z = 5 ;
+        Calculator ob = new Calc();
+        System.out.println ("The Sum is " +ob.add(w, z)) ;  
+        System.out.println ("The Differece is " +ob.subtract(w,z)) ;  
+        System.out.println ("The product is " +ob.multiply(w,z)) ;  
+        System.out.println ("The division is " +ob.divide(w,z)) ;  
+        System.out.println ("The modulus is " +ob.modulus(w,z)) ;
+    }
 }
