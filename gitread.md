@@ -1,2 +1,2 @@
-#My new git folder
-Welcome
+# My Java git repository
+**Contains my java snippets**
