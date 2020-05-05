@@ -1,0 +1,178 @@
+/* Declare and define the following variables:
+
+name with the value "John Smith"
+age with the value 55
+height with the value 175.5
+favoriteColors as an array with the following items "Red", "Green" and "Blue"
+user as an object with the fields:
+name with the value "John Smith"
+age with the value 55
+height with the value 175.5
+favoriteColors as an array with the following items "Red", "Green" and "Blue" */
+
+<script>
+    var name = 'John Smith';
+    var age = 55;
+    var height = 175.5;
+    var favoriteColors = ['Red', 'Green' , 'Blue'];
+    var user = {'name':name,'age':age,'height':height,'favoriteColors':favoriteColors};
+
+export default {
+    name,
+    age,
+    height,
+    favoriteColors,
+    user
+};   
+</script>
+
+export default {
+    name,
+    age,
+    height,
+    favoriteColors,
+    user
+};   
+function hey()
+ {
+    return 'Hey';   // The function returns hey
+ }
+ function square(p)
+ {
+     return p*p ; // returns the square of the give value
+ }
+
+ document.getElementById("demo").innerHTML = hey();
+ document.getElementById("demo").innerHTML = square(2);
+
+ /* Write a function isHeavy(weight) that takes in a number and returns true if weight is >= 100, false otherwise.
+ Implement a function dayName(dayOfWeek) that takes a number in the range [0-6] and return the week name corresponding to the number.
+ Examples
+ 
+ isHeavy(5);     // should return false
+ isHeavy(100);   // should return true
+ 
+ dayName(0);     // should return "Sunday"
+ dayName(1);     // should return "Monday"
+ dayName(6);     // should return "Sunday"
+ Tips & Reflections
+ 
+ Try both normal if/else as well as the ternary operator. What is the difference?
+ Is the switch statement really necessary? Is it possible to achieve the same execution order using normal if/else if/else?
+ Is it possible to implement dayName(dayOfWeek) without using if/else or switch? 
+ 
+ */
+ function isHeavy(weight) // function defined with parameter
+ {
+   if(weight >= 100) // conditonal st
+     return true;
+   else 
+     return false;
+ }
+ isHeavy(5);
+ isHeavy(100);
+ 
+ /* Implement a function dayName(dayOfWeek) 
+ that takes a number in the range [0-6] and return the week name corresponding to the number.
+ Examples */
+ 
+ function dayName(dayOfWeek)
+ {
+   var day = "";
+   switch(dayOfWeek)
+     {
+          case 0:
+         day    = "Sunday";
+     break;
+   case 1:
+     day = "Monday";
+     break;
+   case 2:
+      day = "Tuesday";
+     break;
+   case 3:
+     day = "Wednesday";
+     break;
+   case 4:
+     day = "Thursday";
+     break;
+   case 5:
+     day = "Friday";
+     break;
+   case 6:
+     day = "Saturday";
+             
+     }
+ return day;
+     // should return "Sunday"
+ 
+ }
+ dayName(0);     // should return "Sunday"
+ dayName(1);     // should return "Monday"
+ dayName(6); 
+ undefined
+ function logAll(array)
+ VM299:1 Uncaught SyntaxError: Unexpected end of input
+ <script>
+
+ var i;
+ var array;
+ function logAll(array)
+ {
+    for (i = 0; i < array.length; i++) {
+        array = [i];
+        console.log(array[i]);
+      }
+}
+logAll(1);
+</script>
+ undefined
+ 
+ var numbers = [45, 4, 9, 16, 25];
+numbers.forEach(myFunction);
+function myFunction(value, index, array) {
+    txt = txt + value + "<br>"; 
+  }
+console.log(numbers.forEach(myFunction));
+problem 4:
+// Step 1: create function logAll(array)
+// iterate using foreach
+<script>
+var numbers = [45, 4, 9, 16, 25];
+numbers.forEach(logAll)
+    function logAll(array)
+    {
+        
+        return console.log(array);
+        }
+
+    </script>
+
+
+var numbers = [45, 4, 9, 16, 25];
+console.log( logAll(numbers) );
+
+var numbers2 = numbers1.map(myFunction);
+
+function myFunction(value) {
+  return value * 2;
+}
+
+if you want to make the function to automatically loop the values of the array by simplly calling console.log( logAll(numbers) ) then you need to put the loop code inside the function
+
+
+var numbers = [45, 4, 9, 16, 25];
+numbers.forEach(logAll)
+
+function logAll(array)
+{
+return console.log(array);
+}
+
+
+var array = [1,2,3,9];
+var numbers2 = array.map(squareList);
+
+function squareList(value) {
+  return  console.log(value*value);
+}
