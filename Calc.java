@@ -9,9 +9,9 @@ interface Calculator
 
 public class Calc implements Calculator
 {
-    public int add(int r, int q)
+    public int add(int s, int q)
     {
-        return (r+q);
+        return (s+q);
     }
     public int subtract(int r, int q)
     {

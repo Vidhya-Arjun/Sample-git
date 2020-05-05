@@ -81,9 +81,9 @@ public static void main(String ar[])
     encap.getbranchname("CIT nagar");
     encap.getIfsccode("KKBK00010");
     encap.getbalance(100000);
-    encap.getname("AJAY ARJUN");
+    encap.getname("ARJUN");
     encap.getAccountID(9801019);
-    encap.getAccounttype("Saving");
+    encap.getAccounttype("Current");
     
     System.out.println("ACCOUNT CREATION DETAILS");
     System.out.println("Bank Name : " +encap.getbankname());
